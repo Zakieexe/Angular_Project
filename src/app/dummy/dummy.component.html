@@ -1,0 +1,94 @@
+<div class="form-wrapper">
+  <div class="form-container">
+    <h2>Survey Form</h2>
+    
+    <form (ngSubmit)="onSubmit()">
+
+      <!-- First Question -->
+      <div class="form-group">
+        <label for="vjti-location">Where is VJTI located?</label>
+        <input 
+          type="text" 
+          id="vjti-location" 
+          formControlName="vjtiLocation" 
+          placeholder="Enter your answer" 
+          required 
+        />
+      </div>
+
+      <!-- Second Question: Gender -->
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="checkbox-group">
+          <label>
+            <input 
+              type="checkbox" 
+              formControlName="gender" 
+              value="male" 
+            />
+            Male
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              formControlName="gender" 
+              value="female" 
+            />
+            Female
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              formControlName="gender" 
+              value="other" 
+            />
+            Other
+          </label>
+        </div>
+      </div>
+
+      <!-- Third Question: Age -->
+      <div class="form-group">
+        <label>Age:</label>
+        <div class="radio-group">
+          <label>
+            <input 
+              type="radio" 
+              formControlName="age" 
+              value="under18" 
+            />
+            Under 18
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              formControlName="age" 
+              value="18-35" 
+            />
+            18-35
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              formControlName="age" 
+              value="35-50" 
+            />
+            35-50
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              formControlName="age" 
+              value="over50" 
+            />
+            Over 50
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn" [disabled]="dummyForm.invalid">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
