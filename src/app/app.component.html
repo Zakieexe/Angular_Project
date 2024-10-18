@@ -1,1 +1,90 @@
-<app-main></app-main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihir Task Management Board</title>
+    <link rel="stylesheet" href="FirstPage1.CSS">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Display 
+                <span>&#9660;</span>
+            </button>
+            <div class="dropdown-content">
+                <div class="option">
+                    <label for="grouping">Grouping</label>
+                    <select id="grouping">
+                        <option value="status">Status</option>
+                        <option value="category">Category</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label for="ordering">Ordering</label>
+                    <select id="ordering">
+                        <option value="priority">Priority</option>
+                        <option value="date">Date</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="board">
+        <div class="column todo">
+            <h2>Todo</h2>
+            <div class="card">
+                <h3>CAM-5</h3>
+                <p>Add Multi-Language Support</p>
+                <span class="tag">Feature Request</span>
+            </div>
+            <div class="card">
+                <h3>CAM-8</h3>
+                <p>Create Onboarding Tutorial for New Users</p>
+                <span class="tag">Feature Request</span>
+            </div>
+        </div>
+        <div class="column in-progress">
+            <h2>In Progress</h2>
+            <div class="card">
+                <h3>CAM-3</h3>
+                <p>Optimize Database Queries for Performance</p>
+                <span class="tag">Feature Request</span>
+            </div>
+        </div>
+        <div class="column done">
+            <h2>Done</h2>
+            <div class="card">
+                <h3>CAM-6</h3>
+                <p>Enhance Search Functionality</p>
+                <span class="tag">Feature Request</span>
+            </div>
+            <div class="card">
+                <h3>CAM-7</h3>
+                <p>Integrate Third-Party Payment Gateway</p>
+                <span class="tag">Feature Request</span>
+            </div>
+            <div class="card">
+                <h3>CAM-11</h3>
+                <p>Conduct Security Vulnerability Assessment</p>
+                <span class="tag">Feature Request</span>
+            </div>
+            <div class="card">
+                <h3>CAM-10</h3>
+                <p>Upgrade Server Infrastructure</p>
+                <span class="tag">Feature Request</span>
+            </div>
+            <div class="card">
+                <h3>CAM-9</h3>
+                <p>Implement Role-Based Access Control (RBAC)</p>
+                <span class="tag">Feature Request</span>
+            </div>
+        </div>
+        <div class="column cancelled">
+            <h2>Cancelled</h2>
+        </div>
+    </div>
+</body>
+</html>
+
